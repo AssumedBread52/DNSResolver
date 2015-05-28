@@ -17,11 +17,23 @@
                         +-----------+  +------------+
 */
 
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
+#include <WinSock2.h>
 
-int main(){
+#include "Lookup.h"
+
+#pragma comment(lib, "ws2_32.lib")
+
+int main(int argument_count, char** argument_values){
+	if (argument_count != 2){
+		printf("Usage: DNSResolver.exe [lookup string]\n");
+		system("PAUSE");
+		return 0;
+	}
+	Lookup lookup = Lookup(argument_values[1]);
 	system("PAUSE");
 	return 0;
 }
