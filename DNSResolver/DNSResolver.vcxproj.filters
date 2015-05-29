@@ -23,5 +23,14 @@
     <ClInclude Include="Lookup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DNSHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DNSPacket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
